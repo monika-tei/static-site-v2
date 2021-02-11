@@ -28,9 +28,12 @@ function handleProductList(data) {
         </article>
 */
 function showProduct(product) {
-  console.log(product);
+  //console.log(product);
   //soldOut onSale
   //grab the template
+  console.log(
+    "I am " + product.productdisplayname + "and i ahve id " + product.id
+  );
   const template = document.querySelector("#smallProductTemplate").content;
   //clone it
   const copy = template.cloneNode(true);
@@ -40,6 +43,7 @@ function showProduct(product) {
   ).textContent = `${product.articletype} | ${product.brandname}`;
   copy.querySelector("h3").textContent = product.productdisplayname;
 
+  copy.querySelector("a").href = `product.html?id=${product.id}`;
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }

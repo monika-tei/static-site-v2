@@ -1,4 +1,9 @@
-const url = "https://kea-alt-del.dk/t7/api/products/1525";
+const urlParams = new URLSearchParams(window.location.search);
+//in the URL grab id and store it's value in id
+const id = urlParams.get("id");
+console.log(id);
+
+const url = "https://kea-alt-del.dk/t7/api/products/" + id;
 //fetch the data
 fetch(url)
   .then((res) => res.json())

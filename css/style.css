@@ -32,6 +32,10 @@ html {
   gap: 0.5rem;
   font-size: 1.4rem;
 }
+.letterLinks a,
+.brandList h2 {
+  text-transform: uppercase;
+}
 .brandList ol {
   list-style-type: none;
 }

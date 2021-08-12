@@ -47,7 +47,6 @@ function showBrand(brand) {
     "a"
   ).href = `productlist.html?brandname=${brand.brandname}`;
   const firstLetter = brand.brandname[0].toLowerCase();
-  console.log(`#letter_${firstLetter}`);
   const topParent = document.querySelector(`#letter_${firstLetter}`);
   const elemParent = topParent.querySelector("ol");
   elemParent.appendChild(copy);

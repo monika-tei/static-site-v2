@@ -3,6 +3,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-pad
 }
 .mainNav h1 span {
   display: inline-block;

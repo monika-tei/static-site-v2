@@ -1,6 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 //in the URL grab id and store it's value in id
+
 const brandname = urlParams.get("brandname");
+
 console.log(brandname);
 document.querySelector("main>h2").textContent = brandname;
 const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + brandname;
